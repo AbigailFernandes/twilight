@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
-  "version": "1.1.0",
-  "author": "Austin Green",
+  "name": "shika-studio",
+  "description": "Shikha's studio",
+  "version": "0.0.1",
+  "author": "Abigail, Sanchit",
   "dependencies": {
     "bulma": "^0.6.0",
     "gatsby": "^1.9.213",
@@ -26,13 +26,12 @@
     "gatsby"
   ],
   "license": "MIT",
-  "main": "n/a",
   "scripts": {
     "start": "npm run develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
