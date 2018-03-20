@@ -7,15 +7,9 @@ const Navbar = () => (
         <div className="container">
           <div className="navbar-brand">
             <a className="navbar-item">
-              <img
-                src="https://bulma.io/images/bulma-type-white.png"
-                alt="Logo"
-              />
+              <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
             </a>
-            <span
-              className="navbar-burger burger"
-              data-target="navbarMenuHeroA"
-            >
+            <span className="navbar-burger burger" data-target="navbarMenuHeroA">
               <span />
               <span />
               <span />
@@ -48,8 +42,8 @@ const Navbar = () => (
       <div className="container has-text-centered">
         <h1 className="title">Professional Makeup Artist</h1>
         <h2 className="subtitle">
-          Whatever the occasion is, be sure that my professional make up work
-          and products will make you shine and stand out
+          Whatever the occasion is, be sure that my professional make up work and products will make
+          you shine and stand out
         </h2>
       </div>
     </div>
