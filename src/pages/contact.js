@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 export default () => (
-  <div style={{ margin: "auto 3rem"}}>
+  <div style={{ margin: 'auto 3rem' }}>
     <h1>Richard Hamming on Luck</h1>
     <div>
       <p>
@@ -13,7 +13,7 @@ export default () => (
         <p>
           There is indeed an element of luck, and no, there isn’t. The prepared
           mind sooner or later finds something important and does it. So yes, it
-          is luck.{" "}
+          is luck.{' '}
           <em>
             The particular thing you do is luck, but that you do something is
             not.

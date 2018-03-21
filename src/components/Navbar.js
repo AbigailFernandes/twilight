@@ -14,8 +14,7 @@ const Navbar = () => (
             </a>
             <span
               className="navbar-burger burger"
-              data-target="navbarMenuHeroA"
-            >
+              data-target="navbarMenuHeroA">
               <span />
               <span />
               <span />
