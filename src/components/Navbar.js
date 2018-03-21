@@ -27,10 +27,10 @@ const Navbar = () => (
               <a className="navbar-item">Courses</a>
               <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link">Services</a>
-                <div className="navbar-dropdown is-boxed ">
-                  <a className="navbar-item">Bridal Makeup</a>
-                  <a className="navbar-item">TV Commerical</a>
-                  <a className="navbar-item">Special Occasions</a>
+                <div className="navbar-dropdown is-boxed is-primary">
+                  <a className="dropdown-item">Bridal Makeup</a>
+                  <a className="dropdown-item">TV Commerical</a>
+                  <a className="dropdown-item">Special Occasions</a>
                 </div>
               </div>
               <a className="navbar-item">Portfolio</a>
