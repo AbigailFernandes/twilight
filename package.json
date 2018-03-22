@@ -18,7 +18,8 @@
     "gatsby-transformer-sharp": "^1.6.21",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "sharp": "^0.20.1"
   },
   "keywords": [
     "gatsby"
