@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "gatsby-link";
 
 const Navbar = () => (
   <section className="hero is-primary is-medium">
@@ -34,9 +35,9 @@ const Navbar = () => (
                 </div>
               </div>
               <a className="navbar-item">Portfolio</a>
-              <a className="navbar-item" to="/contacts">
+              <Link className="navbar-item" to="/contact">
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
