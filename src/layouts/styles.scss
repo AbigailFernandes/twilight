@@ -1,0 +1,10 @@
+@import "~bulma";
+
+.gallery-container .albums {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.album {
+  min-width: 320px;
+}

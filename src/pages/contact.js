@@ -11,9 +11,13 @@ export default () => (
       </p>
       <blockquote>
         <p>
-          There is indeed an element of luck, and no, there isn’t. The prepared mind sooner or later
-          finds something important and does it. So yes, it is luck.{' '}
-          <em>The particular thing you do is luck, but that you do something is not.</em>
+          There is indeed an element of luck, and no, there isn’t. The prepared
+          mind sooner or later finds something important and does it. So yes, it
+          is luck.{' '}
+          <em>
+            The particular thing you do is luck, but that you do something is
+            not.
+          </em>
         </p>
       </blockquote>
     </div>
