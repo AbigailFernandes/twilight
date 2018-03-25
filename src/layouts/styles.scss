@@ -1,5 +1,6 @@
-@import "~bulma";
 
+$primary:#ffb3b3;
+@import "~bulma";
 .gallery-container .albums {
   flex-wrap: wrap;
   justify-content: space-around;

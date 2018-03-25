@@ -1,7 +1,10 @@
 import React from 'react';
 
-export default ({ title = 'Album title', artwork = 'https://bulma.io/images/placeholders/1280x960.png' }) => (
-  <div className='column is-3 album'>
+export default ({
+  title = 'Album title',
+  artwork = 'https://bulma.io/images/placeholders/1280x960.png',
+}) => (
+  <div className="column is-3 album">
     <div className="card">
       <div className="card-image">
         <figure className="image is-4by3">
@@ -9,9 +12,7 @@ export default ({ title = 'Album title', artwork = 'https://bulma.io/images/plac
         </figure>
       </div>
       <header class="card-header">
-        <p class="card-header-title">
-          {title}
-        </p>
+        <p class="card-header-title">{title}</p>
       </header>
     </div>
   </div>
