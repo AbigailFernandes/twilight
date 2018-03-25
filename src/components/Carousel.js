@@ -1,16 +1,20 @@
 import React from 'react';
 import Carousel from 'nuka-carousel';
+import home1 from '../img/home/home-1.jpg';
+import home2 from '../img/home/home-2.jpg';
+import home3 from '../img/home/home-3.jpg';
+import home4 from '../img/home/home-4.jpg';
+import home5 from '../img/home/home-5.jpg';
 const images = [
-  { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide1' },
-  { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide2' },
-  { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide3' },
-  { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide4' },
-  { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide5' },
-  { src: 'http://placehold.it/1000x400/ffffff/c0392b/&text=slide6' },
+  { src: home1 },
+  { src: home2 },
+  { src: home3 },
+  { src: home4 },
+  { src: home5 },
 ];
 const AppCarousel = () => (
   <Carousel
-    initialSlideHeight={300}
+    // initialSlideHeight={300}
     wrapAround={true}
     // slidesToShow={3}
     // renderCenterLeftControls={({ previousSlide }) => (
