@@ -6,8 +6,8 @@ export default () => (
     <h1 className='title is-4'>Gallery</h1>
     <h2 className='subtitle is-5'>Featured Albums</h2>
     <div className='columns is-multiline albums'>
-      <Album title='Student Portfolio' />
-      <Album title='Spa and Salon' />
+      <Album title='Student Portfolio' artwork='http://www.jharnashah.com/wp-content/gallery/spa-and-salon/4..jpg' />
+      <Album title='Spa and Salon' artwork='http://www.jharnashah.com/wp-content/gallery/spa-and-salon/3.jpg' />
       <Album title='Jharna shah senior assistants' />
       <Album title='Jharna shah junior make up artist' />
       <Album title='Hair Styling' />
