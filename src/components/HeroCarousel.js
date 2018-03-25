@@ -12,7 +12,7 @@ const images = [
 
 const HeroCarousel = () => (
   <Carousel autoplay={true} autoplayInterval={2000}>
-    {images.map(image => <img key={image.src} {...image} />)}
+    {images.map(image => <img className='carousel-image' key={image.src} {...image} />)}
   </Carousel>
 );
 
