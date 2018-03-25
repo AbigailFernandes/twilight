@@ -5,10 +5,10 @@ const Navbar = () => (
   <nav className="navbar is-primary">
     <div className="container">
       <div className="navbar-brand">
-        <a className="navbar-item">
-          <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
-        </a>
-        <span className="navbar-burger burger" data-target="navbarMenuHeroA">
+        <span
+          className="navbar-burger burger"
+          data-target="navbarMenuHeroA">
+
           <span />
           <span />
           <span />
@@ -29,10 +29,8 @@ const Navbar = () => (
               <a className="dropdown-item">Special Occasions</a>
             </div>
           </div>
-          <a className="navbar-item">Portfolio</a>
-          <Link className="navbar-item" to="/contact">
-            Contact Us
-          </Link>
+          <Link className="navbar-item" to="/gallery">Gallery</Link>
+          <Link className="navbar-item" to="/contact">Contact Us</Link>
         </div>
       </div>
     </div>
