@@ -11,8 +11,8 @@ export default ({
           <img src={artwork} alt={title} />
         </figure>
       </div>
-      <header class="card-header">
-        <p class="card-header-title">{title}</p>
+      <header className="card-header">
+        <p className="card-header-title">{title}</p>
       </header>
     </div>
   </div>
