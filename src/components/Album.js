@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default ({ title = 'Album title' }) => (
-  <div className='column album'>
+  <div className='column is-3 album'>
     <div className="card">
       <div className="card-image">
         <figure className="image is-4by3">
