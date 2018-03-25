@@ -1,19 +1,14 @@
 import React from 'react';
-import Link from "gatsby-link";
+import Link from 'gatsby-link';
 
 const Navbar = () => (
   <nav className="navbar is-primary">
     <div className="container">
       <div className="navbar-brand">
         <a className="navbar-item">
-          <img
-            src="https://bulma.io/images/bulma-type-white.png"
-            alt="Logo"
-          />
+          <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
         </a>
-        <span
-          className="navbar-burger burger"
-          data-target="navbarMenuHeroA">
+        <span className="navbar-burger burger" data-target="navbarMenuHeroA">
           <span />
           <span />
           <span />
@@ -21,7 +16,9 @@ const Navbar = () => (
       </div>
       <div id="navbarMenuHeroA" className="navbar-menu">
         <div className="navbar-end">
-          <a className="navbar-item is-active">Home</a>
+          <Link className="navbar-item is-active" to="/">
+            Home
+          </Link>
           <a className="navbar-item">About</a>
           <a className="navbar-item">Courses</a>
           <div className="navbar-item has-dropdown is-hoverable">
@@ -35,7 +32,7 @@ const Navbar = () => (
           <a className="navbar-item">Portfolio</a>
           <Link className="navbar-item" to="/contact">
             Contact Us
-              </Link>
+          </Link>
         </div>
       </div>
     </div>
