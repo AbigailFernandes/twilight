@@ -5,6 +5,7 @@ import home2 from '../img/home/home-2.jpg';
 import home3 from '../img/home/home-3.jpg';
 import home4 from '../img/home/home-4.jpg';
 import home5 from '../img/home/home-5.jpg';
+
 const images = [
   { src: home1 },
   { src: home2 },
@@ -12,19 +13,11 @@ const images = [
   { src: home4 },
   { src: home5 },
 ];
-const AppCarousel = () => (
-  <Carousel
-    // initialSlideHeight={300}
-    wrapAround={true}
-    // slidesToShow={3}
-    // renderCenterLeftControls={({ previousSlide }) => (
-    //   <button onClick={previousSlide}>Previous</button>
-    // )}
-    // renderCenterRightControls={({ nextSlide }) => (
-    //   <button onClick={nextSlide}>Next</button>
-    // )}
-  >
+
+const HeroCarousel = () => (
+  <Carousel autoplay={true} autoplayInterval={2000}>
     {images.map(image => <img key={image.src} {...image} />)}
   </Carousel>
 );
-export default AppCarousel;
+
+export default HeroCarousel;
