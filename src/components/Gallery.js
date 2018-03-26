@@ -18,7 +18,7 @@ export default () => (
     <h2 className='subtitle is-5'>Featured Albums</h2>
     <div className='columns is-multiline albums'>
       {
-        albums.map(album => <Album {...album} />)
+        albums.map(album => <Album key={album.title} {...album} />)
       }
     </div>
   </div>
