@@ -1,10 +1,16 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import HeroCarousel from '../components/HeroCarousel';
+import Carousel from '../components/Carousel';
 
 export default class IndexPage extends React.Component {
   render() {
-    return <HeroCarousel />;
+    return (
+      <div>
+        <Carousel>
+          {Array.from({ length: 10 }, (_, i) => <div className='carousel__item box'>Item {i}</div>)}
+        </Carousel>
+      </div>
+    )
   }
 }
 
