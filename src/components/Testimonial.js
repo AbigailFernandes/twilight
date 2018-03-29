@@ -4,24 +4,33 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faQuoteLeft from '@fortawesome/fontawesome-free-solid/faQuoteLeft';
 
 export default ({
-  clientName = 'Juhi Jayaram',
-  clientReview = 'Finding the shampoo that is both healthy and nice for your hair is not easy for any woman… So when I found how many hair care products are offered here I was hooked once and for all!',
+  client = {
+    name: 'Juhi Jayaram',
+    review:
+      'Finding the shampoo that is both healthy and nice for your hair is not easy for any woman… So when I found how many hair care products are offered here I was hooked once and for all!',
+  },
 }) => (
   <section className="section-testimonial">
-    <div className="section section-title">
+    <div className="section has-text-centered">
       <h3 className="title is-3">Customer Saying</h3>
     </div>
     <div className="columns is-mobile">
-      <div className="column is-half is-offset-one-quarter testimonial-item">
-        <div className="margin-btm text-center">
-          <img src={clientAvatar} alt="client avatar" className="img-circle" />
+      <div className="column is-half is-offset-one-quarter margin-bottom-3">
+        <div className="horizontal-center is-flex">
+          <figure className="has-text-centered image is-128x128 margin-bottom-2">
+            <img
+              src={clientAvatar}
+              alt="client avatar"
+              className="img-circle"
+            />
+          </figure>
         </div>
-        <div className="text-center margin-btm">
+        <div className="has-text-centered margin-bottom-2">
           <FontAwesomeIcon icon={faQuoteLeft} />
         </div>
-        <p className="text-center margin-btm">{clientReview}</p>
-        <p className="text-center">
-          <strong>{clientName}</strong>
+        <p className="has-text-centered margin-bottom-2">{client.review}</p>
+        <p className="has-text-centered">
+          <strong>{client.name}</strong>
         </p>
       </div>
     </div>

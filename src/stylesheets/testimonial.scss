@@ -1,40 +1,27 @@
-
+@mixin margin-bottom($val) {
+    margin-bottom: $val
+}
 .section-testimonial {
     background: linear-gradient(to right, #ececec, #e2eceb)
-}
-
-.section-title {
-    text-align: center;
-    padding: 0rem 1rem;
-}
-
-.section {
-    padding: 7rem 0rem;
-    position: relative;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: top;
 }
 
 .img-circle {
     border-radius: 50%;
 }
 
-.text-center {
-    text-align: center;
+.margin-bottom-2 {
+    @include margin-bottom(2rem);
 }
 
-.margin-btm {
-    margin-bottom: 2rem;
-}
-
-.testimonial-item {
-    margin-bottom: 3rem;
+.margin-bottom-3 {
+    @include margin-bottom(3rem);
 }
 
 .svg-inline--fa {
     font-size: 3rem;
 }
+
+.horizontal-center {
+    justify-content: center;
+}
+
