@@ -17,7 +17,7 @@ export default ({
     <div className="columns is-mobile">
       <div className="column is-half is-offset-one-quarter margin-bottom-3">
         <div className="horizontal-center is-flex">
-          <figure className="has-text-centered image is-128x128 margin-bottom-2">
+          <figure className="image is-128x128 margin-bottom-2">
             <img
               src={clientAvatar}
               alt="client avatar"
