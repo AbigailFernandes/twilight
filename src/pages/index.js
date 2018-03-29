@@ -1,12 +1,14 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import HeroCarousel from '../components/HeroCarousel';
+import Testimonial from '../components/Testimonial';
 
-export default class IndexPage extends React.Component {
-  render() {
-    return <HeroCarousel />;
-  }
-}
+export default () => (
+  <section>
+    <HeroCarousel />
+    <Testimonial />
+  </section>
+);
 
 export const pageQuery = graphql`
   query IndexQuery {

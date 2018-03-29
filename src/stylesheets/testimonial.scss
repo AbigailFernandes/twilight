@@ -1,0 +1,27 @@
+@mixin margin-bottom($val) {
+    margin-bottom: $val
+}
+.section-testimonial {
+    background: linear-gradient(to right, #ececec, #e2eceb)
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.margin-bottom-2 {
+    @include margin-bottom(2rem);
+}
+
+.margin-bottom-3 {
+    @include margin-bottom(3rem);
+}
+
+.svg-inline--fa {
+    font-size: 3rem;
+}
+
+.horizontal-center {
+    justify-content: center;
+}
+
