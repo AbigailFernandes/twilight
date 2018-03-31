@@ -16,26 +16,14 @@ const Navbar = () => (
           <Link className="navbar-item" to="/">
             Home
           </Link>
-          <Link className="navbar-item" to="/about">
-            About
-          </Link>
-          <Link className="navbar-item" to="/courses">
-            Courses
-          </Link>
-          <div className="navbar-item has-dropdown is-hoverable">
-            <Link className="navbar-link" to="/services">
-              Services
-            </Link>
-            <div className="navbar-dropdown is-boxed is-primary">
-              <Link className="dropdown-item" to="/bridal">
-                Bridal Makeup
-              </Link>
-              <Link className="dropdown-item" to="/commercial">
-                TV Commerical
-              </Link>
-              <Link className="dropdown-item" to="/specialOccasions">
-                Special Occasions
-              </Link>
+          <Link className='navbar-item' to='/about'>About</Link>
+          <Link className='navbar-item' to='/courses'>Courses</Link>
+          <div className='navbar-item has-dropdown is-hoverable'>
+            <Link className='navbar-link' to='/services'>Services</Link>
+            <div className='navbar-dropdown is-boxed is-primary'>
+              <Link className='dropdown-item' to='/about'>Bridal Makeup</Link>
+              <Link className='dropdown-item' to='/about'>TV Commerical</Link>
+              <Link className='dropdown-item' to='/about'>Special Occasions</Link>
             </div>
           </div>
           <Link className="navbar-item" to="/gallery">
