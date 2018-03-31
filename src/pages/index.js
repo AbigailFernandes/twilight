@@ -1,12 +1,10 @@
 import React from 'react';
 import Link from 'gatsby-link';
-
-import HeroCarousel from '../components/HeroCarousel';
-import Testimonial from '../components/Testimonial';
+import { HeroCarousel, Testimonial, EmbedVideo } from '../components';
 
 export default () => (
   <section>
-    <HeroCarousel />
+    <EmbedVideo url="https://www.youtube.com/embed/NHAKai0Z6sA" />
     <Testimonial />
   </section>
 );
