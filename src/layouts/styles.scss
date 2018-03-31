@@ -22,10 +22,14 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 320px;
 }
 
+.carousel-section {
+  background: #F5F5F5;
+}
+
 .carousel {
-  background: lightgray;
   display: flex;
   overflow-x: auto;
+  padding: 1em;
 }
 
 .carousel__item {

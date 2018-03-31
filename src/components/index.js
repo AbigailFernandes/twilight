@@ -6,3 +6,4 @@ export { default as EmbedVideo } from './EmbedVideo.js';
 export { default as Gallery } from './Gallery.js';
 export { default as HeroCarousel } from './HeroCarousel.js';
 export { default as Content } from './Content.js';
+export { default as Carousel } from './Carousel.js';
