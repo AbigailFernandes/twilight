@@ -21,9 +21,9 @@ const Navbar = () => (
           <div className='navbar-item has-dropdown is-hoverable'>
             <Link className='navbar-link' to='/services'>Services</Link>
             <div className='navbar-dropdown is-boxed is-primary'>
-              <Link className='dropdown-item'>Bridal Makeup</Link>
-              <Link className='dropdown-item'>TV Commerical</Link>
-              <Link className='dropdown-item'>Special Occasions</Link>
+              <Link className='dropdown-item' to='/about'>Bridal Makeup</Link>
+              <Link className='dropdown-item' to='/about'>TV Commerical</Link>
+              <Link className='dropdown-item' to='/about'>Special Occasions</Link>
             </div>
           </div>
           <Link className='navbar-item' to='/gallery'>

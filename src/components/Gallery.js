@@ -1,5 +1,6 @@
 import React from 'react';
 import Album from '../components/Album';
+import PhotoGrid from '../components/PhotoGrid';
 
 const albums = [
   { title: 'Student Portfolio', artwork: 'http://www.jharnashah.com/wp-content/gallery/spa-and-salon/4..jpg' },
@@ -21,5 +22,6 @@ export default () => (
         albums.map(album => <Album key={album.title} {...album} />)
       }
     </div>
+    <PhotoGrid />
   </div>
 );

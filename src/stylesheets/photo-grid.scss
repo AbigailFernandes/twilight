@@ -1,0 +1,18 @@
+.photo-container {
+  width: 200px;
+  height: 200px;
+  margin-right: 4px;
+  cursor: pointer;
+
+  .photo {
+    object-fit: cover;
+    object-position: center;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
