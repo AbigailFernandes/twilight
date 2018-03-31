@@ -12,10 +12,10 @@ export default ({
 }) => (
   <section className="section-testimonial">
     <div className="section has-text-centered">
-      <h3 className="title is-3">Customer Saying</h3>
+      <h3 className="title is-3">Testimonials</h3>
     </div>
     <div className="columns is-mobile">
-      <div className="column is-half is-offset-one-quarter margin-bottom-3">
+      <div className="column is-one-fifth is-offset-two-fifths margin-bottom-3 card">
         <div className="horizontal-center is-flex">
           <figure className="has-text-centered image is-128x128 margin-bottom-2">
             <img
