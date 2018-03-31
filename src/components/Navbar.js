@@ -2,18 +2,18 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 const Navbar = () => (
-  <nav className='navbar is-transparent'>
-    <div className='container'>
-      <div className='navbar-brand'>
-        <span className='navbar-burger burger' data-target='navbarMenuHeroA'>
+  <nav className="navbar is-transparent">
+    <div className="container">
+      <div className="navbar-brand">
+        <span className="navbar-burger burger" data-target="navbarMenuHeroA">
           <span />
           <span />
           <span />
         </span>
       </div>
-      <div id='navbarMenuHeroA' className='navbar-menu'>
-        <div className='navbar-end'>
-          <Link className='navbar-item' to='/'>
+      <div id="navbarMenuHeroA" className="navbar-menu">
+        <div className="navbar-end">
+          <Link className="navbar-item" to="/">
             Home
           </Link>
           <Link className='navbar-item' to='/about'>About</Link>
@@ -26,10 +26,10 @@ const Navbar = () => (
               <Link className='dropdown-item' to='/about'>Special Occasions</Link>
             </div>
           </div>
-          <Link className='navbar-item' to='/gallery'>
+          <Link className="navbar-item" to="/gallery">
             Gallery
           </Link>
-          <Link className='navbar-item' to='/contact'>
+          <Link className="navbar-item" to="/contact">
             Contact Us
           </Link>
         </div>
