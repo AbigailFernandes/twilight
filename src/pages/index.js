@@ -1,12 +1,18 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import { HeroCarousel, Testimonial, EmbedVideo } from '../components/';
+import { Testimonial, EmbedVideo, Carousel } from '../components';
 
 export default () => (
   <section>
-    {/* <HeroCarousel /> */}
     <EmbedVideo url="https://www.youtube.com/embed/NHAKai0Z6sA" />
-    <Testimonial />
+    <section className="section carousel-section">
+      <Carousel>
+        <Testimonial />
+        <Testimonial />
+        <Testimonial />
+        <Testimonial />
+      </Carousel>
+    </section>
   </section>
 );
 
