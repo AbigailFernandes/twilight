@@ -1,4 +1,8 @@
 import React from 'react';
-import Services from '../components/Services';
+import PageHeader from '../components/PageHeader';
 
-export default () => <Services />;
+export default () => (
+  <section className="section">
+    <PageHeader title="Services" className="section-services-title" />
+  </section>
+);
