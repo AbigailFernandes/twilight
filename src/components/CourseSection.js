@@ -4,7 +4,7 @@ import '../stylesheets/courses.scss';
 
 export default ({ image = home1 }) => (
   <div className="container columns course-section">
-    <div class="column is-2-desktop is-hidden-touch" />
+    <div className="column is-3 is-hidden-touch" />
     <div className="course-photo column is-one-third-desktop is-half-tablet">
       <figure className="aden">
         <img className="course-image" src={image} />
