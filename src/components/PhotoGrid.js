@@ -5,7 +5,9 @@ import '../stylesheets/photo-grid.scss';
 
 const Photo = ({ src, ...otherProps }) => (
   <div className='photo-container' {...otherProps}>
-    <img className='photo' src={src} />
+    <figure className='image'>  
+      <img className='photo' src={src} />
+    </figure>  
   </div>
 );
 
@@ -48,7 +50,7 @@ class PhotoGrid extends React.Component {
 
     return (
       <section className='section'>
-        <div className='container photo-grid'>
+        <div className='container is-fluid photo-grid'>
           {images.map((img, i) => (
             <Photo key={i} {...img} onClick={() => this.selectImage(i)} />
           ))}
