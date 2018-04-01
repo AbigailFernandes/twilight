@@ -49,8 +49,8 @@ class PhotoGrid extends React.Component {
     const { currentImage, galleryOpen } = this.state;
 
     return (
-      <section className='section'>
-        <div className='container is-fluid photo-grid'>
+      <div>
+        <div className='container photo-grid'>
           {images.map((img, i) => (
             <Photo key={i} {...img} onClick={() => this.selectImage(i)} />
           ))}
@@ -63,7 +63,7 @@ class PhotoGrid extends React.Component {
           onClickNext={this.goToNext}
           onClickPrev={this.goToPrevious}
         />
-      </section>
+      </div>
     );
   }
 }
