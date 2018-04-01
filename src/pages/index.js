@@ -1,9 +1,13 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import { Testimonial, EmbedVideo, Carousel } from '../components';
+import { marilynQuote } from '../img/home';
 
 export default () => (
   <section>
+    <figure className="image">
+      <img src={marilynQuote} />
+    </figure>
     <EmbedVideo url="https://www.youtube.com/embed/NHAKai0Z6sA" />
     <section className="section carousel-section">
       <Carousel>

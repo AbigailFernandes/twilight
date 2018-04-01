@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/cssgram/0.1.10/cssgram.min.css');
-@import '../stylesheets/testimonial.scss';
 
 $primary:#C2185B;
 
@@ -41,8 +40,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
+  width: 0px;
+  background: transparent;
 }
 
 @mixin underline($background: #fff, $text: #000, $selection: #ffc, $position: 86%){
@@ -69,4 +68,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .underline {
   @include underline();
+}
+
+.course-page {
+	background:url("../img/home/Makeup+Powder.jpg");
+	background-size: cover;
 }
