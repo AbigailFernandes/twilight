@@ -18,7 +18,7 @@ export default ({
       </figure>
     </div>
     <div className="has-text-centered margin-bottom-2">
-      <FontAwesomeIcon icon={faQuoteLeft} />
+      <FontAwesomeIcon icon={faQuoteLeft} size="3x" />
     </div>
     <p className="has-text-centered margin-bottom-2">{client.review}</p>
     <p className="has-text-centered">
