@@ -1,6 +1,6 @@
 import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faEevelope from '@fortawesome/fontawesome-free-solid/faEnvelope';
+import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope';
 import '../stylesheets/contact.scss';
 
 export default () => (
@@ -36,7 +36,7 @@ export default () => (
               <div class="control has-icons-left has-icons-right">
                 <input class="input" type="email" placeholder="Enter your email" />
                 <span class="icon is-small is-left">
-                  <FontAwesomeIcon icon={faEevelope} />
+                  <FontAwesomeIcon icon={faEnvelope} />
                 </span>
                 <span class="icon is-small is-right">
                   <i class="fas fa-exclamation-triangle" />
@@ -47,7 +47,7 @@ export default () => (
             <div class="field">
               <label class="label">Message</label>
               <div class="control">
-                <textarea class="textarea" placeholder="What do you want to kow?" />
+                <textarea class="textarea" placeholder="What do you want to know?" />
               </div>
             </div>
 
