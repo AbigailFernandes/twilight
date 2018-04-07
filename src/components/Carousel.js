@@ -4,6 +4,11 @@ import '../stylesheets/carousel.scss';
 class Carousel extends Component {
   containerRef = null;
   childrenRefs = [];
+  
+  state = {
+    activeItem: 0,
+    scrollWidth: 0
+  };
 
   constructor() {
     super();
@@ -14,13 +19,25 @@ class Carousel extends Component {
   }
 
   componentDidMount() {
-    this.containerRef.style.height = this.childrenRefs[0].offsetHeight + 40 + 'px';
+    this.containerRef.style.height =
+      this.childrenRefs[0].offsetHeight + 40 + 'px';
+    this.setState({ scrollWidth: this.childrenRefs[0].offsetWidth + 20})
   }
 
-  goNext() {}
+  goNext() {
+    this.setState({
+      activeItem: (this.state.activeItem + 1) % this.childrenRefs.length,
+    });
+  }
 
-  goPrevious() { }
-  
+  goPrevious() {
+    this.setState({
+      activeItem:
+        (this.state.activeItem - 1 + this.childrenRefs.length) %
+        this.childrenRefs.length,
+    });
+  }
+
   getStyles() {
     return {};
   }
@@ -35,7 +52,7 @@ class Carousel extends Component {
             className="carousel-item"
             key={i}
             ref={r => (this.childrenRefs[i] = r)}
-            style={{ transform: `translateX(${360*i}px)` }}>
+            style={{ transform: `translateX(${this.state.scrollWidth * (i - this.state.activeItem)}px)` }}>
             {child}
           </div>
         ))}
