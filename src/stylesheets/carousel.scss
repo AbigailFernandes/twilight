@@ -3,17 +3,13 @@
 }
 
 .carousel {
-  display: flex;
-  overflow-x: auto;
   padding: 1em;
   position: relative;
-}
+  overflow: hidden;
 
-.carousel__item {
-  flex-shrink: 0;
-  margin: 8px;
-  width: 300px;
-  height: 400px;
+  .carousel-item {
+    position: absolute;
+  }
 }
 
 .carousel::-webkit-scrollbar {
