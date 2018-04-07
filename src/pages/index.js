@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import { Testimonial, EmbedVideo, Carousel } from '../components';
+import { Testimonial, EmbedVideo, Carousel, AboutSection } from '../components';
 import { marilynQuote } from '../img/home';
 
 export default () => (
@@ -9,6 +9,7 @@ export default () => (
       <img src={marilynQuote} />
     </figure>
     <EmbedVideo url="https://www.youtube.com/embed/NHAKai0Z6sA" />
+    <AboutSection />
     <section className="section carousel-section">
       <Carousel>
         <Testimonial />
