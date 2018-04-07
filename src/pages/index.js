@@ -12,10 +12,7 @@ export default () => (
     <AboutSection />
     <section className="section carousel-section">
       <Carousel>
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
+        {Array(10).fill(0).map(i => <Testimonial key={i} />)}
       </Carousel>
     </section>
   </section>

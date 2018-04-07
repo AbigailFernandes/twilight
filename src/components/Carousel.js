@@ -4,10 +4,10 @@ import '../stylesheets/carousel.scss';
 class Carousel extends Component {
   containerRef = null;
   childrenRefs = [];
-  
+
   state = {
     activeItem: 0,
-    scrollWidth: 0
+    scrollWidth: 0,
   };
 
   constructor() {
@@ -15,13 +15,12 @@ class Carousel extends Component {
 
     this.goNext = this.goNext.bind(this);
     this.goPrevious = this.goPrevious.bind(this);
-    this.getStyles = this.getStyles.bind(this);
   }
 
   componentDidMount() {
     this.containerRef.style.height =
       this.childrenRefs[0].offsetHeight + 40 + 'px';
-    this.setState({ scrollWidth: this.childrenRefs[0].offsetWidth + 20})
+    this.setState({ scrollWidth: this.childrenRefs[0].offsetWidth + 20 });
   }
 
   goNext() {
@@ -38,11 +37,10 @@ class Carousel extends Component {
     });
   }
 
-  getStyles() {
-    return {};
-  }
-
   render() {
+    const { scrollWidth, activeItem } = this.state;
+    const childCount = this.childrenRefs.length;
+
     return (
       <div
         className="container is-fluid carousel"
@@ -52,7 +50,13 @@ class Carousel extends Component {
             className="carousel-item"
             key={i}
             ref={r => (this.childrenRefs[i] = r)}
-            style={{ transform: `translateX(${this.state.scrollWidth * (i - this.state.activeItem)}px)` }}>
+            style={{
+              transform: `translateX(
+                ${-scrollWidth +
+                  scrollWidth *
+                    1 *
+                    ((i + childCount - activeItem) % childCount)}px)`,
+            }}>
             {child}
           </div>
         ))}
