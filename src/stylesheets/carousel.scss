@@ -1,0 +1,52 @@
+.carousel-section {
+  background: #F5F5F5;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  padding: 1em;
+  position: relative;
+}
+
+.carousel__item {
+  flex-shrink: 0;
+  margin: 8px;
+  width: 300px;
+  height: 400px;
+}
+
+.carousel::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+
+.controls-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .control {
+    width: 48px;
+    height: 48px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+
+    &:hover {
+      background: darkgray;
+    }
+  }
+}
