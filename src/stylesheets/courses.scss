@@ -1,7 +1,36 @@
+$turquoise: #00897b;
+
 .course-section {
   padding: 4em 0;
 }
 
+.course-container {
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &.reverse {
+    flex-flow: row-reverse;
+    flex-wrap: wrap;
+  }
+}
+
+.course-heading {
+  color: $turquoise;
+}
+
 .course-list {
   background: #fff;
+  max-width: 400px;
+  padding: 0 2em;
+}
+
+.course-photo figure {
+  width: 240px;
+  height: 240px;
+
+  .course-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

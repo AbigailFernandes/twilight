@@ -8,6 +8,7 @@
     "@fortawesome/fontawesome-free-solid": "^5.0.8",
     "@fortawesome/react-fontawesome": "0.0.18",
     "bulma": "^0.6.0",
+    "classnames": "^2.2.5",
     "gatsby": "^1.9.213",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-netlify-cms": "^1.0.9",
