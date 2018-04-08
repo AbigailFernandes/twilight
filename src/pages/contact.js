@@ -24,36 +24,36 @@ export default () => (
               <span className="is-size-4">Contact Us</span>
             </div>
 
-            <div class="field">
-              <label class="label">Name</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Enter your name" />
+            <div className="field">
+              <label className="label">Name</label>
+              <div className="control">
+                <input className="input" type="text" placeholder="Enter your name" />
               </div>
             </div>
 
-            <div class="field">
-              <label class="label">Email</label>
-              <div class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Enter your email" />
-                <span class="icon is-small is-left">
+            <div className="field">
+              <label className="label">Email</label>
+              <div className="control has-icons-left has-icons-right">
+                <input className="input" type="email" placeholder="Enter your email" />
+                <span className="icon is-small is-left">
                   <FontAwesomeIcon icon={faEnvelope} />
                 </span>
-                <span class="icon is-small is-right">
-                  <i class="fas fa-exclamation-triangle" />
+                <span className="icon is-small is-right">
+                  <i className="fas fa-exclamation-triangle" />
                 </span>
               </div>
             </div>
 
-            <div class="field">
-              <label class="label">Message</label>
-              <div class="control">
-                <textarea class="textarea" placeholder="What do you want to know?" />
+            <div className="field">
+              <label className="label">Message</label>
+              <div className="control">
+                <textarea className="textarea" placeholder="What do you want to know?" />
               </div>
             </div>
 
-            <div class="field">
-              <div class="control">
-                <button class="button is-link">Submit</button>
+            <div className="field">
+              <div className="control">
+                <button className="button is-link">Submit</button>
               </div>
             </div>
           </div>
