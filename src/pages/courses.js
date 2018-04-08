@@ -6,6 +6,6 @@ export default () => (
   <div className="section course-page">
     <h1 className="is-size-2 has-text-centered">Courses</h1>
     <CourseSection image={home1} />
-    <CourseSection image={home2} />
+    <CourseSection image={home2} reverse />
   </div>
 );
