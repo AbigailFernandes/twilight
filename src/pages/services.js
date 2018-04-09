@@ -27,7 +27,7 @@ const services = [
 ];
 
 export default () => (
-  <section className="section">
+  <section className="section is-paddingless">
     <PageHeader title="Services" className="section-services-title" />
     <section className="section">
       <div className="columns is-centered is-gapless">
