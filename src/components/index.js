@@ -9,4 +9,6 @@ export { default as Content } from './Content.js';
 export { default as Carousel } from './Carousel.js';
 export { default as CourseSection } from './CourseSection.js';
 export { default as PageHeader } from './PageHeader.js';
+export { default as ServiceSection } from './ServiceSection.js';
 export { default as AboutSection } from './AboutSection.js';
+export { default as PhotoGrid } from './PhotoGrid.js';

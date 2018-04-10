@@ -1,0 +1,35 @@
+@mixin service-box($val) {
+    background: $val;
+    margin: 20px;
+}
+
+.peach {
+    @include service-box(#feede9);
+}
+
+.cyan {
+    @include service-box(#e9ffea);
+}
+
+.teal {
+    @include service-box(#e9fdfe);
+}
+
+.service-contents h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 60px;
+    background: #444;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    
+}
+
+.service-contents {
+    padding: 20px;
+
+    p {
+        padding-bottom: 15px;
+    }
+}
