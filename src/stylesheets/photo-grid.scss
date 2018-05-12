@@ -8,6 +8,11 @@
     object-fit: cover;
     height: 200px;
     width: auto;
+    filter: brightness(90%);
+    
+    &:hover {
+      filter: brightness(100%);
+    }
   }
 
   .caption {
