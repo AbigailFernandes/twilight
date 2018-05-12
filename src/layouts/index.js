@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { Navbar } from '../components';
+import { Navbar, Footer } from '../components';
 import './styles.scss';
 
 const TemplateWrapper = ({ children }) => (
@@ -9,6 +9,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet title="Shikha's Studio" />
     <Navbar />
     <div>{children()}</div>
+    <Footer />
   </div>
 );
 
