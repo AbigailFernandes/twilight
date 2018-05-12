@@ -2,11 +2,21 @@
   margin-right: 4px;
   margin-bottom: 4px;
   cursor: pointer;
+  position: relative;
 
   .photo {
     object-fit: cover;
     height: 200px;
     width: auto;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    font-size: 1.2em;
+    margin: 0.4em 1em;
   }
 }
 

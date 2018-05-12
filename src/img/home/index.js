@@ -25,8 +25,8 @@ export {
 };
 
 export const images = [
-  { src: home1 },
-  { src: home2 },
+  { src: home1, caption: 'Wildlife makeup' },
+  { src: home2, caption: 'Bridal makeup for special occasions' },
   { src: home3 },
   { src: home4 },
   { src: home5 },
