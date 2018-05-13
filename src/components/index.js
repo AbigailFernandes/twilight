@@ -12,3 +12,4 @@ export { default as PageHeader } from './PageHeader.js';
 export { default as ServiceSection } from './ServiceSection.js';
 export { default as AboutSection } from './AboutSection.js';
 export { default as PhotoGrid } from './PhotoGrid.js';
+export { default as PortfolioGrid } from './PortfolioGrid.js';

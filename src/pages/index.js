@@ -6,6 +6,7 @@ import {
   Carousel,
   AboutSection,
   HeroCarousel,
+  PortfolioGrid,
 } from '../components';
 import { testimonials } from '../content/testimonial';
 
@@ -14,7 +15,8 @@ export default () => (
     <HeroCarousel />
     <EmbedVideo url="https://www.youtube.com/embed/8b4Kc2McVAM" />
     <AboutSection />
-    <section className="section">
+    <PortfolioGrid />
+    <section className="section section-background">
       <Carousel>
         {testimonials.map(item => <Testimonial key={item.name} {...item} />)}
       </Carousel>

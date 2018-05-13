@@ -58,19 +58,16 @@ class PhotoGrid extends React.Component {
   render() {
     const { currentImage, galleryOpen } = this.state;
     const chunkedPhotos = chunk(images, 4);
-    console.log(chunkedPhotos);
     return (
       <div>
         <div className="container photo-grid">
-          {
-            chunkedPhotos.map((chunk, j) => {
-              return (
-                <div className="photo-column" key={j}>
-                  {chunk.map((img, i) => <Photo key={i} {...img} />)}
-                </div>  
-              )
-            })
-          }
+          {chunkedPhotos.map((chunk, j) => {
+            return (
+              <div className="photo-column" key={j}>
+                {chunk.map((img, i) => <Photo key={i} {...img} />)}
+              </div>
+            );
+          })}
         </div>
         <Lightbox
           currentImage={currentImage}

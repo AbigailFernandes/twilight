@@ -1,0 +1,13 @@
+  .photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .photo {
+    width: 350px;
+    height: 516px;
+    
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
