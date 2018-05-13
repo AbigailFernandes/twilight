@@ -8,7 +8,7 @@ export { s1, s2, s3, s5, s6 };
 export const images = [
   { src: s1 },
   { src: s2 },
-  { src: s3 },
   { src: s5 },
+  { src: s3 },
   { src: s6 },
 ];
