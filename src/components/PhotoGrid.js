@@ -3,11 +3,12 @@ import Lightbox from 'react-images';
 import { images } from '../img/home';
 import '../stylesheets/photo-grid.scss';
 
-const Photo = ({ src, ...otherProps }) => (
+const Photo = ({ src, caption = "", ...otherProps }) => (
   <div className='photo-container' {...otherProps}>
     <figure className='image'>  
       <img className='photo' src={src} />
-    </figure>  
+      <figcaption className='caption'>{caption}</figcaption>
+    </figure> 
   </div>
 );
 
