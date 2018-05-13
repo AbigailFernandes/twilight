@@ -7,18 +7,14 @@ import {
   AboutSection,
   HeroCarousel,
 } from '../components';
-import { marilynQuote } from '../img/home';
 import { testimonials } from '../content/testimonial';
 
 export default () => (
   <section>
-    {/* <figure className="image">
-      <img src={marilynQuote} />
-    </figure> */}
     <HeroCarousel />
-    <EmbedVideo url="https://www.youtube.com/embed/NHAKai0Z6sA" />
+    <EmbedVideo url="https://www.youtube.com/embed/8b4Kc2McVAM" />
     <AboutSection />
-    <section className="section carousel-section">
+    <section className="section">
       <Carousel>
         {testimonials.map(item => <Testimonial key={item.name} {...item} />)}
       </Carousel>

@@ -1,7 +1,9 @@
 import React from 'react';
 
 export default () => (
-  <section className="section about-section">
+  <section
+    className="section about-section"
+    style={{ justifyContent: 'center', background: '#f7f3f0' }}>
     <div className="columns">
       <div className="column">
         <img src="http://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/02/24083416/Dentist-Smile-PNG-Transparent-Picture.png" />
