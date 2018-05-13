@@ -23,7 +23,7 @@ const Navbar = () => (
             <Link className="navbar-link" to="/services">
               Services
             </Link>
-            <div className="navbar-dropdown is-boxed is-primary">
+            {/* <div className="navbar-dropdown is-boxed is-primary">
               <Link className="dropdown-item" to="/about">
                 Bridal Makeup
               </Link>
@@ -33,7 +33,7 @@ const Navbar = () => (
               <Link className="dropdown-item" to="/about">
                 Special Occasions
               </Link>
-            </div>
+            </div> */}
           </div>
           <Link className="navbar-item" to="/gallery">
             Gallery
