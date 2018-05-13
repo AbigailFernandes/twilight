@@ -67,8 +67,7 @@ class Navbar extends React.Component {
               <Link className="navbar-item" to="/contact">
                 Contact Us
               </Link>
-            </div>{' '}
-            */}
+            </div>
           </div>
         </div>
       </nav>
