@@ -1,14 +1,23 @@
 import React from 'react';
 import Lightbox from 'react-images';
-import { images } from '../img/home';
+import { images } from '../img/portfolio';
 import '../stylesheets/photo-grid.scss';
 
-const Photo = ({ src, caption = "", ...otherProps }) => (
-  <div className='photo-container' {...otherProps}>
-    <figure className='image'>  
-      <img className='photo' src={src} />
-      <figcaption className='caption'>{caption}</figcaption>
-    </figure> 
+function chunk(array, chunkSize = 4) {
+  const chunked = [];
+  const group = array.length / 4;
+  for (let i = 0; i < array.length; i += group) {
+    chunked.push(array.slice(i, i + group));
+  }
+  return chunked;
+}
+
+const Photo = ({ src, caption = '', ...otherProps }) => (
+  <div className="photo-container" {...otherProps}>
+    <figure className="image">
+      <img className="photo" src={src} />
+      <figcaption className="caption">{caption}</figcaption>
+    </figure>
   </div>
 );
 
@@ -48,13 +57,20 @@ class PhotoGrid extends React.Component {
 
   render() {
     const { currentImage, galleryOpen } = this.state;
-
+    const chunkedPhotos = chunk(images, 4);
+    console.log(chunkedPhotos);
     return (
       <div>
-        <div className='container photo-grid'>
-          {images.map((img, i) => (
-            <Photo key={i} {...img} onClick={() => this.selectImage(i)} />
-          ))}
+        <div className="container photo-grid">
+          {
+            chunkedPhotos.map((chunk, j) => {
+              return (
+                <div className="photo-column" key={j}>
+                  {chunk.map((img, i) => <Photo key={i} {...img} />)}
+                </div>  
+              )
+            })
+          }
         </div>
         <Lightbox
           currentImage={currentImage}
