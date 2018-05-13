@@ -81,8 +81,8 @@ export {
 };
 
 export const images = [
-  { src: a1 },
-  { src: a2, caption: 'Bridal makeup for special occasions' },
+  { src: a1, caption: 'Bridal makeup for special occasions' },
+  { src: a2 },
   { src: a3 },
   { src: a4 },
   { src: a5 },
@@ -103,4 +103,21 @@ export const images = [
   { src: a20 },
   { src: a21 },
   { src: a22 },
+  { src: a23 },
+  { src: a24 },
+  { src: a25 },
+  { src: a26 },
+  { src: a27 },
+  { src: a28 },
+  { src: a29 },
+  { src: a30 },
+  { src: a31 },
+  { src: a32 },
+  { src: a33 },
+  { src: a34 },
+  { src: a35 },
+  { src: a36 },
+  { src: a37 },
+  { src: a38 },
+  { src: a39 },
 ];
