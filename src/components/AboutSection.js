@@ -12,24 +12,33 @@ export default () => (
         </span>
         <div className="content has-text-justified">
           <blockquote>
-            Shikha Make up and Hair Academy Boutique Salon Spa commenced with an
-            aspiration and continued with dedication.
+            "SHIKHA JAISWAL EMBRACES ALL BEAUTY, AND STRIVES TO ENHANCE HER
+            CLIENT'S NATURAL BEAUTY BOTH INSIDE AND OUT.”
           </blockquote>
-          <p>
-            At present, it is one of the top names in the make up and hair
-            industry. There are a host of combinations that made this academy
-            the most renowned in the beauty circuit- luxurious & trendy
-            amenities, proficient & upgraded professionals, and dynamic
-            improvement approach.
+          <p className="is">
+            Shikha Jaiswal has been passionate about make-up and cosmetics ever
+            since she was a little girl. She would carefully observe her mother
+            apply make-up, and would emphasize on the importance of applying
+            high quality products. Her love for children led to her working as a
+            full-time ECCE tutor.
           </p>
           <p>
             {' '}
-            For the newbies aspiring to fly in the skies of beauty industry, we
-            provide a comprehensive professional training in make up and hair.
+            She also tried her hand at jewellery designing and was in the
+            industry for a short stint. As one is destined to pursue the things
+            they love, she decided to turn her passion and love for make-up into
+            a full-time professional job.
           </p>
           <p>
-            We have proficient counsellors conducting self-grooming workshops,
-            ensuring every woman can avail the benefits.
+            She was the go-to make-up artist amongst her peers, providing her
+            skills for formals and weddings. She enrolled for a Diploma course
+            from a leading academy in Mumbai, where she learnt the essentials of
+            make-up/hair and styling. Shikha found that the communications and
+            business skills acquired in her prior professional stint would carry
+            over when developing her own freelance make-up business, and allowed
+            her to build her network in Mumbai and beyond. Along with providing
+            make-up services she also conducts workshops and short courses for
+            all age groups.
           </p>
         </div>
       </div>
