@@ -1,11 +1,10 @@
 export const testimonials = [
   {
     name: 'Samantha',
-    review: `Shikha actually understood my requirement and did exactly what I wanted and was
-      comfortable wearing. She is very neat and works in a very systematic manner. She was in
-      time for the order and her charges was worth the effort she put in. I got a lot of
-      compliments as she blended the makeup very well and it went great with my outfit as well. I
-      would surely recommend Shikha and will hire her myself again and again.`,
+    review: `Shikha understood my requirement and did exactly what I wanted. She is very neat and works in a 
+    very systematic manner. Her charges was worth the effort she put in. I got a lot of
+    compliments as she blended the makeup very well and it went great with my outfit. I surely will recommend Shikha
+    and will hire her myself again and again.`,
     avatar: true,
   },
   {
@@ -41,8 +40,8 @@ export const testimonials = [
   {
     name: 'Neta',
     review: `I hired Miss Shikha, for a close friend’s wedding party. I needed a natural make-up look and
-      Shikha did a great job which exceeded my expectation. She was on time and well prepared.
-      She is very professional. Her charges are very reasonable compared to the quality of make-
+      Shikha did a great job which that my expectation. She was on time and well prepared.
+      She is professional. Her charges are very reasonable compared to the quality of make-
       up. She makes sure she gives a worthwhile experience. Thank you.`,
     avatar: true,
   },
