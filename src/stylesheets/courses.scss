@@ -2,7 +2,6 @@ $turquoise: #00897b;
 
 .course-section {
   padding: 4em 0;
-  background: #fff;
   border-radius: 4px;
 }
 
@@ -15,6 +14,13 @@ $turquoise: #00897b;
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 768px) {
+  .course-section {
+    background: #fff;
+  }
+}
+
 
 .course-heading {
   color: $turquoise;

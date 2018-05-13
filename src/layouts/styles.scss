@@ -48,13 +48,15 @@ h1, h2, h3, h4, h5, h6 {
   @include underline();
 }
 
-.course-page {
-	background:url("../img/home/Makeup+Powder.jpg");
-	background-size: cover;
-
+@media (max-width: 768px) {
 	.course-title {
 		background: #fff;
 	}
+}
+
+.course-page {
+	background:url("../img/home/Makeup+Powder.jpg");
+	background-size: cover;
 }
 
 .app-footer {
