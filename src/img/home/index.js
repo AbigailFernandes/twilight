@@ -9,6 +9,7 @@ import { default as marilynQuote } from './marilyn-quote.jpg';
 import { default as service1 } from './service1.jpg';
 import { default as service2 } from './service2.jpg';
 import { default as service3 } from './service3.jpg';
+import { default as shikha } from './Shikha.jpg';
 
 export {
   home1,
@@ -22,6 +23,7 @@ export {
   service1,
   service2,
   service3,
+  shikha,
 };
 
 export const images = [

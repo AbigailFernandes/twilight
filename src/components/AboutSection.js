@@ -1,10 +1,11 @@
 import React from 'react';
+import { shikha } from '../img/home';
 
 export default () => (
   <section className="section about-section section-background">
     <div className="columns">
       <div className="column">
-        <img src="http://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/02/24083416/Dentist-Smile-PNG-Transparent-Picture.png" />
+        <img src={shikha} style={{ width: '400px' }} />
       </div>
       <div className="column">
         <span className="is-size-3 has-text-primary has-text-weight-normal">
