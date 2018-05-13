@@ -1,10 +1,11 @@
 import React from 'react';
 import { ServiceSection, PageHeader } from '../components';
 import { service1, service2, service3 } from '../img/home';
+import { s1, s2, s3, s6, s5 } from '../img/mainPage';
 
 const services = [
   {
-    image: service1,
+    image: s5,
     title: 'Bridal Makeup',
     peach: true,
     content: `Not only do you want to look flawless in photos on your big day, 
@@ -14,14 +15,14 @@ const services = [
     allowing you to truly enjoy and relax before walking down the aisle`,
   },
   {
-    image: service2,
+    image: s2,
     title: 'On Location Services',
     cyan: true,
     content: `Shikha provides a vast array of on-location professional make-up services for both men and women. It could
     be for a photoshoot or an event.`,
   },
   {
-    image: service3,
+    image: s3,
     title: 'Special Events',
     teal: true,
     content: `Shikha can create a signature look for any special occasion. She listens carefully to your ideas and works closely with 
