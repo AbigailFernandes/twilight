@@ -5,8 +5,8 @@ import PageHeader from '../components/PageHeader';
 export default () => (
   <section className="section  is-paddingless">
     <PageHeader title="Gallery" className="section-gallery-title" />
-    <section className="section">
+    <container className="container is-fluid">
       <PhotoGrid />
-    </section>
+    </container>
   </section>
 );
