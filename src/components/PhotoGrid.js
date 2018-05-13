@@ -1,6 +1,6 @@
 import React from 'react';
 import Lightbox from 'react-images';
-import { images } from '../img/gallery';
+import { images } from '../img/portfolio';
 import '../stylesheets/photo-grid.scss';
 
 function chunk(array, chunkSize = 4) {
