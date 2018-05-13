@@ -49,7 +49,7 @@ class Navbar extends React.Component {
                 <Link className="navbar-link" to="/services">
                   Services
                 </Link>
-                <div className="navbar-dropdown is-boxed is-primary">
+                {/* <div className="navbar-dropdown is-boxed is-primary">
                   <Link className="dropdown-item" to="/about">
                     Bridal Makeup
                   </Link>
@@ -59,7 +59,7 @@ class Navbar extends React.Component {
                   <Link className="dropdown-item" to="/about">
                     Special Occasions
                   </Link>
-                </div>
+                </div> */}
               </div>
               <Link className="navbar-item" to="/gallery">
                 Gallery
@@ -67,7 +67,8 @@ class Navbar extends React.Component {
               <Link className="navbar-item" to="/contact">
                 Contact Us
               </Link>
-            </div>
+            </div>{' '}
+            */}
           </div>
         </div>
       </nav>
