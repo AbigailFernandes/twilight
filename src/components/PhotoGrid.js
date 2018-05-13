@@ -1,14 +1,14 @@
 import React from 'react';
 import Lightbox from 'react-images';
-import { images } from '../img/home';
+import { images } from '../img/gallery';
 import '../stylesheets/photo-grid.scss';
 
-const Photo = ({ src, caption = "", ...otherProps }) => (
-  <div className='photo-container' {...otherProps}>
-    <figure className='image'>  
-      <img className='photo' src={src} />
-      <figcaption className='caption'>{caption}</figcaption>
-    </figure> 
+const Photo = ({ src, caption = '', ...otherProps }) => (
+  <div className="photo-container" {...otherProps}>
+    <figure className="image">
+      <img className="photo" src={src} />
+      <figcaption className="caption">{caption}</figcaption>
+    </figure>
   </div>
 );
 
@@ -51,7 +51,7 @@ class PhotoGrid extends React.Component {
 
     return (
       <div>
-        <div className='container photo-grid'>
+        <div className="container photo-grid">
           {images.map((img, i) => (
             <Photo key={i} {...img} onClick={() => this.selectImage(i)} />
           ))}
