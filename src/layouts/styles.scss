@@ -15,13 +15,42 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Alegreya', serif;
 }
 
+.video-section {
+	background-repeat: no-repeat;
+	justify-content: center;
+	background-size: cover;
+	background-position-x: -200px;
+}
+
 .gallery-container .albums {
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
+.bordered-underline {
+	border-top: 2px dashed #bf9b30;
+	border-bottom: 1px dashed #bf9b30;
+	box-shadow: inset 0 -1px 0 0 #bf9b30, inset 0 1px 0 0 #bf9b30, 0 1px 0 0 #bf9b30, 0 -1px 0 0 #bf9b30;
+}
+
+.page-header {
+	font-size: 3em;
+	margin: 1em;
+	text-align: center;
+	
+	.header__title {
+		letter-spacing: 0.4em;
+	}
+}
+
 .album {
   min-width: 320px;
+}
+
+.about-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @mixin underline($background: #fff, $text: #000, $selection: #ffc, $position: 86%){

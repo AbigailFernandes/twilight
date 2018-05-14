@@ -20,7 +20,7 @@ class Carousel extends Component {
   componentDidMount() {
     this.containerRef.style.height =
       this.childrenRefs[0].offsetHeight + 40 + 'px';
-    this.setState({ scrollWidth: this.childrenRefs[0].offsetWidth + 20 });
+    this.setState({ scrollWidth: this.childrenRefs[0].offsetWidth + 80 });
   }
 
   goNext() {

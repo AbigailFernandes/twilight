@@ -2,10 +2,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    .portfolio-figure {
+      height: 516px;
+    }
   }
+  
   .photo {
     width: 350px;
     height: 516px;
+    object-fit: cover;
     
     &:hover {
       filter: brightness(90%);

@@ -6,7 +6,7 @@ export default () => (
   <section className="section is-flex" style={{ justifyContent: 'center' }}>
     <div className="photo-grid">
       {images.map(item => (
-        <figure>
+        <figure className="portfolio-figure">
           <img className="photo" src={item.src} />
         </figure>
       ))}

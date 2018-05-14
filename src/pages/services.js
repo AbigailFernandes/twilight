@@ -32,7 +32,7 @@ const services = [
 
 export default () => (
   <section className="section is-paddingless">
-    <PageHeader title="Services" className="section-services-title" />
+    <PageHeader title="𝕊𝔼ℝ𝕍𝕀ℂ𝔼𝕊" className="section-services-title" />
     <section className="section">
       <div className="columns is-centered is-gapless">
         {services.map(service => (
