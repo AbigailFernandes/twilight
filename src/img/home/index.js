@@ -10,6 +10,7 @@ import { default as service1 } from './service1.jpg';
 import { default as service2 } from './service2.jpg';
 import { default as service3 } from './service3.jpg';
 import { default as shikha } from './Shikha.jpg';
+import { default as makeupSmear } from './Makeup+Smear.jpg';
 
 export {
   home1,
@@ -24,6 +25,7 @@ export {
   service2,
   service3,
   shikha,
+  makeupSmear
 };
 
 export const images = [

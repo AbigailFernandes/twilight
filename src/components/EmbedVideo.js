@@ -1,7 +1,10 @@
 import React from 'react';
+import { makeupSmear } from "../img/home";
 
 export default ({ url }) => (
-  <section className="section is-flex" style={{ justifyContent: 'center' }}>
+  <section
+    className="section video-section is-flex"
+    style={{ backgroundImage: `url(${makeupSmear})` }}>
     <iframe
       width="560"
       height="315"
