@@ -24,6 +24,12 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 320px;
 }
 
+.about-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 @mixin underline($background: #fff, $text: #000, $selection: #ffc, $position: 86%){
 	color: inherit;
 	text-decoration: none;

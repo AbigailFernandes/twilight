@@ -4,7 +4,7 @@ import { shikha } from '../img/home';
 export default () => (
   <section className="section about-section section-background">
     <div className="columns">
-      <div className="column">
+      <div className="column about-image">
         <img src={shikha} style={{ width: '400px' }} />
       </div>
       <div className="column">
