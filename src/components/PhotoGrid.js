@@ -64,7 +64,13 @@ class PhotoGrid extends React.Component {
           {chunkedPhotos.map((chunk, j) => {
             return (
               <div className="photo-column" key={j}>
-                {chunk.map((img, i) => <Photo key={i} {...img} />)}
+                {chunk.map((img, i) => (
+                  <Photo
+                    key={i}
+                    {...img}
+                    onClick={() => this.selectImage(j * chunk.length + i - 1)}
+                  />
+                ))}
               </div>
             );
           })}
