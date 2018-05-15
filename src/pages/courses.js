@@ -29,7 +29,7 @@ const courses = [
   },
 ];
 export default () => (
-  <div className="section course-page">
+  <div className="section course-page is-paddingless">
     <PageHeader title="ℂ𝕆𝕌ℝ𝕊𝔼𝕊" />
     {courses.map(course => <CourseSection key={course.title} {...course} />)}
   </div>
