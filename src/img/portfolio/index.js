@@ -40,7 +40,6 @@ import { default as a39 } from './39.jpg';
 import { default as a40 } from './40.jpg';
 import { default as a41 } from './a1.jpg';
 import { default as a42 } from './a2.jpg';
-import { default as a43 } from './a3.jpg';
 import { default as a44 } from './a4.jpg';
 import { default as a45 } from './a5.jpg';
 import { default as a46 } from './a6.jpg';
@@ -96,14 +95,13 @@ export {
   a37,
   a38,
   a39,
-  a40, 
-  a41, 
-  a42, 
-  a43, 
-  a44, 
-  a45, 
-  a46, 
-  a47, 
+  a40,
+  a41,
+  a42,
+  a44,
+  a45,
+  a46,
+  a47,
   a48,
   a49,
   a50,
@@ -119,12 +117,11 @@ export {
 export const images = [
   { src: a41 },
   { src: a42 },
-  { src: a43 },
   { src: a44 },
   { src: a45 },
   { src: a46 },
   { src: a47 },
-  { src: a48},
+  { src: a48 },
   { src: a49 },
   { src: a50 },
   { src: a51 },
@@ -132,8 +129,8 @@ export const images = [
   { src: a53 },
   { src: a54 },
   { src: a55 },
-  { src: a56},
-  { src: a57},
+  { src: a56 },
+  { src: a57 },
   { src: a1 },
   { src: a2 },
   { src: a3 },
