@@ -1,6 +1,4 @@
 import React from 'react';
-import '../stylesheets/page-header.scss';
-import bridal1 from '../img/home/';
 
 export default ({
   title = 'Page Title'

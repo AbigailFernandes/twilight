@@ -105,3 +105,9 @@ h1, h2, h3, h4, h5, h6 {
 .section-background {
 	background: #f7f3f0;
 }
+
+@media (max-width: 768px) {
+.page-header {
+	font-size: 2em;
+  }
+}
