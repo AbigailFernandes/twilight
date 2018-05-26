@@ -1,7 +1,7 @@
-import { default as s1 } from './1.jpg';
-import { default as s2 } from './2.jpg';
-import { default as s3 } from './3.jpg';
-export { s1, s2, s3, };
+import { default as s1 } from './1.JPG';
+import { default as s2 } from './2.JPG';
+import { default as s3 } from './3.JPG';
+export { s1, s2, s3 };
 
 // export const images = [
 //   { src: s1 },
