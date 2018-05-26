@@ -37,6 +37,23 @@ import { default as a36 } from './36.jpg';
 import { default as a37 } from './37.jpg';
 import { default as a38 } from './38.jpg';
 import { default as a39 } from './39.jpg';
+import { default as a40 } from './40.jpg';
+import { default as a41 } from './a1.jpg';
+import { default as a42 } from './a2.jpg';
+import { default as a44 } from './a4.jpg';
+import { default as a45 } from './a5.jpg';
+import { default as a46 } from './a6.jpg';
+import { default as a47 } from './a7.jpg';
+import { default as a48 } from './a8.jpg';
+import { default as a49 } from './a9.jpg';
+import { default as a50 } from './a10.jpg';
+import { default as a51 } from './a11.jpg';
+import { default as a52 } from './a12.jpg';
+import { default as a53 } from './a13.jpg';
+import { default as a54 } from './a14.jpg';
+import { default as a55 } from './a15.jpg';
+import { default as a56 } from './a16.jpg';
+import { default as a57 } from './a17.jpg';
 
 export {
   a1,
@@ -78,10 +95,43 @@ export {
   a37,
   a38,
   a39,
+  a40,
+  a41,
+  a42,
+  a44,
+  a45,
+  a46,
+  a47,
+  a48,
+  a49,
+  a50,
+  a51,
+  a52,
+  a53,
+  a54,
+  a55,
+  a56,
+  a57,
 };
 
 export const images = [
-  { src: a1, caption: 'Bridal makeup for special occasions' },
+  { src: a41 },
+  { src: a42 },
+  { src: a44 },
+  { src: a45 },
+  { src: a46 },
+  { src: a47 },
+  { src: a48 },
+  { src: a49 },
+  { src: a50 },
+  { src: a51 },
+  { src: a52 },
+  { src: a53 },
+  { src: a54 },
+  { src: a55 },
+  { src: a56 },
+  { src: a57 },
+  { src: a1 },
   { src: a2 },
   { src: a3 },
   { src: a4 },
@@ -120,4 +170,5 @@ export const images = [
   { src: a37 },
   { src: a38 },
   { src: a39 },
+  { src: a40 },
 ];

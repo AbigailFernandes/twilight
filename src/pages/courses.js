@@ -1,16 +1,16 @@
 import React from 'react';
 import { CourseSection, PageHeader } from '../components';
-import { home1, home2 } from '../img/home';
+import { s1, s2, s3 } from '../img/courses';
 
 const courses = [
   {
-    image: home1,
+    image: s1,
     title: 'Bridal Makeup course',
     reverse: false,
     content: ['4-5 weeks comprehensive detailed course.'],
   },
   {
-    image: home2,
+    image: s3,
     title: 'Professional Make-up and Hair Styling',
     reverse: true,
     content: [
@@ -19,7 +19,7 @@ const courses = [
     ],
   },
   {
-    image: home1,
+    image: s2,
     title: 'Personal Grooming',
     reverse: false,
     content: [
@@ -29,8 +29,10 @@ const courses = [
   },
 ];
 export default () => (
-  <div className="section course-page is-paddingless">
+  <div className="section is-paddingless">
     <PageHeader title="ℂ𝕆𝕌ℝ𝕊𝔼𝕊" />
-    {courses.map(course => <CourseSection key={course.title} {...course} />)}
+    <div className="course-page">
+      {courses.map(course => <CourseSection key={course.title} {...course} />)}
+    </div>
   </div>
 );
