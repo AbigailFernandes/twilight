@@ -16,49 +16,61 @@ export default () => (
                 <span className="is-size-4">Contact Shikha</span>
               </div>
 
-              <div className="field">
-                <label className="label">Name</label>
-                <div className="control">
-                  <input
-                    className="input"
-                    type="text"
-                    placeholder="Enter your name"
-                  />
+              <form
+                name="contact"
+                method="post"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact" />
+                <div className="field">
+                  <label className="label">Name</label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type="text"
+                      name="name"
+                      placeholder="Enter your name"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div className="field">
-                <label className="label">Email</label>
-                <div className="control has-icons-left has-icons-right">
-                  <input
-                    className="input"
-                    type="email"
-                    placeholder="Enter your email"
-                  />
-                  <span className="icon is-small is-left">
-                    <FontAwesomeIcon icon={faEnvelope} />
-                  </span>
-                  <span className="icon is-small is-right">
-                    <i className="fas fa-exclamation-triangle" />
-                  </span>
+                <div className="field">
+                  <label className="label">Email</label>
+                  <div className="control has-icons-left has-icons-right">
+                    <input
+                      className="input"
+                      type="email"
+                      name="email"
+                      placeholder="Enter your email"
+                    />
+                    <span className="icon is-small is-left">
+                      <FontAwesomeIcon icon={faEnvelope} />
+                    </span>
+                    <span className="icon is-small is-right">
+                      <i className="fas fa-exclamation-triangle" />
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div className="field">
-                <label className="label">Message</label>
-                <div className="control">
-                  <textarea
-                    className="textarea"
-                    placeholder="What do you want to know?"
-                  />
+                <div className="field">
+                  <label className="label">Message</label>
+                  <div className="control">
+                    <textarea
+                      className="textarea"
+                      name="message"
+                      placeholder="What do you want to know?"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div className="field">
-                <div className="control">
-                  <button className="button is-link">Submit</button>
+                <div className="field">
+                  <div className="control">
+                    <button type="submit" className="button is-link">
+                      Submit
+                    </button>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
             <div className="column">
               <section className="section is-marginless map-container">

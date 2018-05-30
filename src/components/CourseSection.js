@@ -16,11 +16,9 @@ export default ({
           <img className="course-image" src={image} />
         </figure>
       </div>
-      <div className="course-list">
+      <div className="course-list content">
         <span className="course-heading is-size-3">{title}</span>
-        <ul>
-          {content.map(item => <li className="course-item">&bull; {item} </li>)}
-        </ul>
+        <ul>{content.map(item => <li className="course-item">{item} </li>)}</ul>
       </div>
     </div>
   </div>
