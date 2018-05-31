@@ -49,17 +49,17 @@ class Navbar extends React.Component {
                 <Link className="navbar-link" to="/services">
                   Services
                 </Link>
-                {/* <div className="navbar-dropdown is-boxed is-primary">
-                  <Link className="dropdown-item" to="/about">
+                <div className="navbar-dropdown is-boxed is-primary">
+                  <Link className="dropdown-item" to="/serviceDetails">
                     Bridal Makeup
                   </Link>
-                  <Link className="dropdown-item" to="/about">
-                    TV Commerical
+                  <Link className="dropdown-item" to="/serviceDetails">
+                    On Location Services
                   </Link>
-                  <Link className="dropdown-item" to="/about">
+                  {/* <Link className="dropdown-item" to="/about">
                     Special Occasions
-                  </Link>
-                </div> */}
+                  </Link> */}
+                </div>
               </div>
               <Link className="navbar-item" to="/gallery">
                 Gallery
