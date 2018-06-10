@@ -1,6 +1,7 @@
 import React from 'react';
 import { CourseSection, PageHeader } from '../components';
 import { s1, s2, s3 } from '../img/courses';
+import { servicesHeader } from '../img/headers';
 
 const courses = [
   {
@@ -34,7 +35,7 @@ const courses = [
 
 export default () => (
   <div className="section is-paddingless">
-    <PageHeader title="𝕊𝔼ℝ𝕍𝕀ℂ𝔼𝕊" />
+    <PageHeader image={servicesHeader} />
     <div className="course-page">
       {courses.map(course => <CourseSection key={course.title} {...course} />)}
       <div className="content">
