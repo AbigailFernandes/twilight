@@ -47,7 +47,6 @@ import { default as a47 } from './a7.jpg';
 import { default as a48 } from './a8.jpg';
 import { default as a49 } from './a9.jpg';
 import { default as a50 } from './a10.jpg';
-import { default as a51 } from './a11.jpg';
 import { default as a52 } from './a12.jpg';
 import { default as a53 } from './a13.jpg';
 import { default as a54 } from './a14.jpg';
@@ -105,7 +104,6 @@ export {
   a48,
   a49,
   a50,
-  a51,
   a52,
   a53,
   a54,
@@ -124,7 +122,6 @@ export const images = [
   { src: a48 },
   { src: a49 },
   { src: a50 },
-  { src: a51 },
   { src: a52 },
   { src: a53 },
   { src: a54 },
