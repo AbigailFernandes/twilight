@@ -1,9 +1,7 @@
 import React from 'react';
 
-export default ({
-  title = 'Page Title'
-}) => (
-  <div className='page-header'>
-      <span className="header__title bordered-underline">{title}</span>
+export default ({ image }) => (
+  <div className="page-header">
+    <img src={image} />
   </div>
 );

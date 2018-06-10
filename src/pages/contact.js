@@ -2,12 +2,13 @@ import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope';
 import { PageHeader } from '../components';
+import { contact } from '../img/headers';
 import '../stylesheets/contact.scss';
 
 export default () => (
   <div>
     <section className="section is-paddingless">
-      <PageHeader title="ℂ𝕆ℕ𝕋𝔸ℂ𝕋 𝕌𝕊" />
+      <PageHeader image={contact} />
       <section className="section form-section">
         <div className="container">
           <div className="columns">

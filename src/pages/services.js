@@ -2,6 +2,7 @@ import React from 'react';
 import { ServiceSection, PageHeader } from '../components';
 import { service1, service2, service3 } from '../img/home';
 import { s1, s2, s3, s6, s5 } from '../img/mainPage';
+import { servicesHeader } from '../img/headers';
 
 const services = [
   {
@@ -32,7 +33,7 @@ const services = [
 
 export default () => (
   <section className="section is-paddingless">
-    <PageHeader title="𝕊𝔼ℝ𝕍𝕀ℂ𝔼𝕊" className="section-services-title" />
+    <PageHeader image={servicesHeader} />
     <section className="section">
       <div className="columns is-centered is-gapless">
         {services.map(service => (
