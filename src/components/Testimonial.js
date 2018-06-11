@@ -6,11 +6,6 @@ import '../stylesheets/testimonial.scss';
 
 export default ({ name = 'Juhi Jayaram', review = 'Default' }) => (
   <div className="testimonial">
-    {/* <div className="horizontal-center is-flex">
-      <figure className="has-text-centered image is-128x128 margin-bottom-2">
-        <img src={clientAvatar} alt="client avatar" className="img-circle" />
-      </figure>
-    </div> */}
     <div className="has-text-centered margin-bottom-2">
       <FontAwesomeIcon icon={faQuoteLeft} size="3x" />
     </div>
