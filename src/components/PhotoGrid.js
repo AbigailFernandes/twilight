@@ -4,12 +4,14 @@ import { images } from '../img/portfolio';
 import '../stylesheets/photo-grid.scss';
 
 function chunk(array, chunkSize = 4) {
-  const chunked = [];
-  const group = array.length / 4;
-  for (let i = 0; i < array.length; i += group) {
-    chunked.push(array.slice(i, i + group));
+  const columns = Array(chunkSize)
+    .fill(0)
+    .map(_ => []);
+  for (let i = 0; i < array.length; i++) {
+    const column = i % chunkSize;
+    columns[column].push(array[i]);
   }
-  return chunked;
+  return columns;
 }
 
 const Photo = ({ src, caption = '', ...otherProps }) => (
@@ -33,6 +35,7 @@ class PhotoGrid extends React.Component {
     this.toggleGallery = this.toggleGallery.bind(this);
     this.goToNext = this.goToNext.bind(this);
     this.goToPrevious = this.goToPrevious.bind(this);
+    this.getPhotos = this.getPhotos.bind(this);
   }
 
   goToNext() {
@@ -55,26 +58,28 @@ class PhotoGrid extends React.Component {
     this.setState({ galleryOpen: !this.state.galleryOpen });
   }
 
+  getPhotos() {
+    const chunkedPhotos = chunk(images, 4);
+
+    return chunkedPhotos.map((chunk, j) => (
+      <div className="photo-column" key={j}>
+        {chunk.map((img, i) => (
+          <Photo
+            key={i}
+            {...img}
+            onClick={() => this.selectImage(i * chunkedPhotos.length + j)}
+          />
+        ))}
+      </div>
+    ));
+  }
+
   render() {
     const { currentImage, galleryOpen } = this.state;
-    const chunkedPhotos = chunk(images, 4);
+
     return (
       <div>
-        <div className="container photo-grid">
-          {chunkedPhotos.map((chunk, j) => {
-            return (
-              <div className="photo-column" key={j}>
-                {chunk.map((img, i) => (
-                  <Photo
-                    key={i}
-                    {...img}
-                    onClick={() => this.selectImage(j * chunk.length + i - 1)}
-                  />
-                ))}
-              </div>
-            );
-          })}
-        </div>
+        <div className="container photo-grid">{this.getPhotos()}</div>
         <Lightbox
           currentImage={currentImage}
           isOpen={galleryOpen}

@@ -1,6 +1,5 @@
 import React from 'react';
 import Features from '../components/Features';
-import Testimonials from '../components/Testimonials';
 import Pricing from '../components/Pricing';
 
 export const ProductPageTemplate = ({
@@ -84,7 +83,6 @@ export const ProductPageTemplate = ({
                   </div>
                 </div>
               </div>
-              <Testimonials testimonials={testimonials} />
               <div
                 className="full-width-image-container"
                 style={{ backgroundImage: `url(${fullImage})` }}
