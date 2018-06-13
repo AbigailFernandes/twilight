@@ -67,7 +67,7 @@ class PhotoGrid extends React.Component {
           <Photo
             key={i}
             {...img}
-            onClick={() => this.selectImage((i + 1) * chunk.length + j)}
+            onClick={() => this.selectImage(i * chunkedPhotos.length + j)}
           />
         ))}
       </div>
