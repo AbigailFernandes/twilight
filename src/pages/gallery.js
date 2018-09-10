@@ -7,7 +7,7 @@ export default ({ data }) => {
   const photos = data.allImageSharp.edges.map(edge => ({
     thumbnail: edge.node.resize.src,
     src: edge.node.original.src,
-  }));
+  })).reverse();
 
   return (
     <section className="gallery-section section is-paddingless has-text-centered">
@@ -21,13 +21,15 @@ export default ({ data }) => {
 
 export const query = graphql`
   query GalleryQuery {
-    allImageSharp(filter: { id: { regex: "/portfolio/" } }) {
+    allImageSharp(
+      filter: { id: { regex: "/portfolio/" } }
+    ) {
       edges {
         node {
           original {
             src
           }
-          resize(width: 400) {
+          resize(width: 480) {
             src
           }
         }
