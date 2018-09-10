@@ -53,6 +53,32 @@ import { default as a54 } from './a14.jpg';
 import { default as a55 } from './a15.jpg';
 import { default as a56 } from './a16.jpg';
 import { default as a57 } from './a17.jpg';
+import a58 from './a58.jpg';
+import a59 from './a59.jpg';
+import a60 from './a60.jpg';
+import a61 from './a61.jpg';
+import a62 from './a62.jpg';
+import a63 from './a63.jpg';
+import a64 from './a64.jpg';
+import a65 from './a65.jpg';
+import a66 from './a66.jpg';
+import a67 from './a67.jpg';
+import a68 from './a68.jpg';
+import a69 from './a69.jpg';
+import a70 from './a70.jpg';
+import a71 from './a71.jpg';
+import a72 from './a72.jpg';
+import a73 from './a73.jpg';
+import a74 from './a74.jpg';
+import a75 from './a75.jpg';
+import a76 from './a76.jpg';
+import a77 from './a77.jpg';
+import a78 from './a78.jpg';
+import a79 from './a79.jpg';
+import a80 from './a80.jpg';
+import a81 from './a81.jpg';
+import a82 from './a82.jpg';
+import a83 from './a83.jpg';
 
 export {
   a1,
@@ -113,6 +139,17 @@ export {
 };
 
 export const images = [
+  { src: a58 },
+  { src: a59 },
+  { src: a60 },
+  { src: a61 },
+  { src: a62 },
+  { src: a63 },
+  { src: a64 },
+  { src: a65 },
+  { src: a66 },
+  { src: a67 },
+  { src: a68 },
   { src: a41 },
   { src: a42 },
   { src: a44 },
@@ -168,4 +205,19 @@ export const images = [
   { src: a38 },
   { src: a39 },
   { src: a40 },
+  { src: a69 },
+  { src: a70 },
+  { src: a71 },
+  { src: a72 },
+  { src: a73 },
+  { src: a74 },
+  { src: a75 },
+  { src: a76 },
+  { src: a77 },
+  { src: a78 },
+  { src: a79 },
+  { src: a80 },
+  { src: a81 },
+  { src: a82 },
+  { src: a83 },
 ];
