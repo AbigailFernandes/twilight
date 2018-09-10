@@ -1,6 +1,5 @@
 import React from 'react';
 import Lightbox from 'react-images';
-import { images } from '../img/portfolio';
 import '../stylesheets/photo-grid.scss';
 
 function chunk(array, chunkSize = 4) {
@@ -40,13 +39,13 @@ class PhotoGrid extends React.Component {
 
   goToNext() {
     this.setState({
-      currentImage: (this.state.currentImage + 1) % images.length,
+      currentImage: (this.state.currentImage + 1) % this.props.photos.length,
     });
   }
 
   goToPrevious() {
     this.setState({
-      currentImage: (this.state.currentImage - 1) % images.length,
+      currentImage: (this.state.currentImage - 1) % this.props.photos.length,
     });
   }
 
@@ -59,14 +58,14 @@ class PhotoGrid extends React.Component {
   }
 
   getPhotos() {
-    const chunkedPhotos = chunk(images, 4);
+    const chunkedPhotos = chunk(this.props.photos, 4);
 
     return chunkedPhotos.map((chunk, j) => (
       <div className="photo-column" key={j}>
         {chunk.map((img, i) => (
           <Photo
             key={i}
-            {...img}
+            src={img.thumbnail}
             onClick={() => this.selectImage(i * chunkedPhotos.length + j)}
           />
         ))}
@@ -83,7 +82,7 @@ class PhotoGrid extends React.Component {
         <Lightbox
           currentImage={currentImage}
           isOpen={galleryOpen}
-          images={images}
+          images={this.props.photos}
           onClose={this.toggleGallery}
           onClickNext={this.goToNext}
           onClickPrev={this.goToPrevious}
