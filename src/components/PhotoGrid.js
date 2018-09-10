@@ -2,7 +2,7 @@ import React from 'react';
 import Lightbox from 'react-images';
 import '../stylesheets/photo-grid.scss';
 
-function chunk(array, chunkSize = 4) {
+function chunk(array = [], chunkSize = 4) {
   const columns = Array(chunkSize)
     .fill(0)
     .map(_ => []);

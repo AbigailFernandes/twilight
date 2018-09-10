@@ -1,5 +1,4 @@
 import React from 'react';
-import clientAvatar from '../img/client.jpg';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faQuoteLeft from '@fortawesome/fontawesome-free-solid/faQuoteLeft';
 import '../stylesheets/testimonial.scss';
